@@ -1,0 +1,1333 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Beau+Rivage&family=Bubblegum+Sans&family=Lavishly+Yours&family=Nothing+You+Could+Do&family=Pacifico&family=Sacramento&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* mobile style*/
+@media screen and (min-width:760px){
+    /* gives the body ,p and wrapper-header values*/
+    body {
+        width: 720px;
+        font-family: "Amatic+SC",sans-serif;
+        background-color: white;
+        padding: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    p {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .wrapper-header {
+        background-color: #ffebac;
+        width: 720px;
+        height: 1900px;
+        margin-bottom: 60px;
+    }
+    /* gives the header-navbar section background and size */
+    .navbar {
+    display: grid;
+    background-color:#000000;
+    width: 720px;
+    height: 500px;
+    margin: 0;
+    }
+    /* gives the navbar section-logobox background color,size and margins */
+    .logobox {
+    background-color:#c78c06;
+    width: 690px;
+    height: 200px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 15px;
+    }
+    /* gives the logo image size and margin */
+    .logo { 
+    width: 100px;
+    float: left;
+    margin-top: 15px;   
+    }
+    /* gives the navbar section-navbox postion and margins */
+    .navbox {
+    position: relative;
+    margin-left: 304px;
+    margin-right: 304px;
+    margin-top: -50px;
+    width: 100px;
+    text-align: center;    
+    }
+    /* gives the navbar-home different color */
+    .navbox-home {
+    color:#000000;
+    }
+    /* gives the list of nav position, delete the lines and the prefix of the list, font size, and the space of the child nav*/
+      nav li a {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 18px;
+    color: #c78c06;
+    height: 60px;   
+   }
+   ul {
+    list-style: none;
+   }
+    /* gives the navbar section-searchbox display and margins */
+    .searchbox {
+    display:  flex;
+    width: 720px;
+    height: 50px; 
+    }
+    /* gives the input area size and margin*/
+    .search-area input[type=text]{
+    margin-left: 15px;
+    width: 660px;
+    height: 30px;
+    }
+    /* gives the searchbar-submit border, color, transprent the background-color, margin and position */
+    .searchbar-submit {
+    align-items: center;
+    justify-content: center;
+    color:#c78c06;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: 1px solid #c78c06;
+    margin-left: 0.5px;
+    margin-top: -0.6px;  
+    }
+    /*gives the welcome-area backgound image and size */
+    .weclome-area {
+    position: relative;
+    background-image: url("main-banner.jpg");
+    width: 720px;
+    height: 750px;
+    margin: 0;
+    }
+     /* gives the image the position and size */
+    .main-banner {
+    position: relative;
+    width: 720px;
+    height: 750px; 
+    }
+     /* gives a background to the welcome header and p , which needs to be 
+    transparent , size and position  */
+    .wrapper-welcome {
+    position: relative;
+    background-color: #222;
+    opacity: 0.5;
+    margin-top: -700px;
+    width: 720px;
+    height: 500px;
+    }
+     /* gives the welcome heading position, font-size, weight,color ,width ,and margin*/
+    .welcome-heading {
+    position: relative;
+    font-size: 80px;
+    font-weight: bold;
+    color: white;
+    width: 690px;
+    margin-top: -400px;
+    margin-left: 10px;
+    }
+    /* gives the welcome-p color */
+   .welcome-p {
+    position: relative; 
+    color: white;
+    }
+    /* give the connect bar wrapper values-position, background color,size, margin*/
+   .wrapper-connectbar {
+    position: relative;
+    background-color: #c78c06;
+    width: 250px;
+    height: 90px;
+    margin-left: 15px;
+    margin-top: 15px;
+   }
+    /* gives the connect words position, size*/
+    .connect-bar {
+    position: relative;
+    float: left;
+    margin-left: 20px;
+    margin-top: 30px;
+    font-size: 24px;
+    }
+    /* gives the icon position ,float and size*/
+    .connect-icons {
+    position: relative;
+    float: left;
+    margin-left: 10px;
+    margin-top: 25px;
+    font-size: xx-large;
+    }
+    /* gives the about-us section 's pic position, size and margin*/
+    .about-us {
+    position: relative;
+    width: 690px;
+    height: 350px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 220px;
+   }
+   /* gives introduce us heading font size , weight and margin*/
+   .introduce-heading {
+    font-size:  50px;
+    font-weight: bold;
+    margin-left: 15px;
+   }
+   /* gives the ourservices heading font size ,weight and margin*/
+   .ourservices-heading {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-left: 15px;
+   }
+    /* gives the digital section wrapper ,pic background color size */
+    .wrapper-digitial {
+    background-color: #ffebac;
+    width: 720px;
+    height: 850px;
+   }
+    .digital {
+    width: 720px;
+    height: 500px;
+    }
+    /* gives the digital heading font size weight and margin*/
+    .digital-heading {
+    font-size: 32px;
+    font-weight: bold;
+    margin-left: 15px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    }
+    /* gives the digital-bar wrapper background color ,size and margin */
+    .wrapper-digitalbar {
+    position: relative;
+    background-color: #000000;
+    width: 240px;
+    height: 95px;
+    margin-left: 15px;
+    margin-top: 30px;
+    }
+    /* gives the digital plan color ,font size, position ,float to left */
+    .digital-bar {
+    color: white;
+    font-size: 24px;
+    position: relative;
+    float: left;
+    margin-left: 25px;
+    margin-top: 30px;
+   }
+     /* gives the icon color, font size , position and margin */
+   .digital-icons {
+    position: relative;
+    float: left;
+    margin-left: 25px;
+    margin-top: 25px;
+    text-align: center; 
+    color: white;
+    font-size: xx-large;
+   }
+   /* gives the marketing section, pic a  wrapper background color size and margin */
+   .wrapper-marketing {
+    background-color: #ffebac;
+    width: 720px;
+    height: 850px;
+    margin-top: 15px;
+   }
+    .marketing {
+    width: 720px;
+    height: 500px;
+    }
+      /* gives the marketing heading font size and margin */
+    .marketing-heading {
+    font-size: 32px;
+    font-weight: bold;
+    margin-left: 15px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+   }
+   /* gives the marketing-bar a wrapper position background color size and margin*/
+    .wrapper-marketingbar {
+    position: relative;
+    background-color: #000000;
+    width: 240px;
+    height: 95px;
+    margin-left: 15px;
+    margin-top: 30px;
+   }
+   /* gives the marketing plan color, font size , position and margin */
+   .marketing-bar {
+    color: white;
+    font-size: 24px;
+    position: relative;
+    float: left;
+    margin-left: 25px;
+    margin-top: 30px;
+    }
+    /* gives the icon color, font size , position and margin */
+    .marketing-icons {
+    position: absolute;
+    margin-left: 210px;
+    margin-top: 25px;
+    color: white;
+    font-size: xx-large;   
+    }
+    /* gives the video section, pic a  wrapper background color size and margin */
+    .wrapper-video {
+    background-color: #ffebac;
+    width: 720px;
+    height: 850px;
+    margin-top: 15px;
+   }
+    .video {
+    width: 720px;
+    height: 500px;
+   }
+    /* gives the video heading font size and margin */
+    .video-heading {
+    font-size: 32px;
+    font-weight: bold;
+    margin-left: 15px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+   }
+      /* gives the video-bar a wrapper position background color size and margin*/
+    .wrapper-videobar {
+    position: relative;
+    background-color: #000000;
+    width: 240px;
+    height: 95px;
+    margin-left: 20px;
+    margin-top: 30px;
+   }
+    /* gives the video plan color, font size , position and margin */
+   .video-bar {
+    color: white;
+    font-size: 24px;
+    position: relative;
+    float: left;
+    margin-left: 30px;
+    margin-top: 30px;
+   }
+    /* gives the icon color, font size , position and margin */
+    .video-icons {
+    position: absolute;
+    margin-left: 180px;
+    margin-top: 25px;
+    color: white;
+    font-size: xx-large;   
+    }
+    /* gives the web section, pic a  wrapper background color size and margin */
+    .wrapper-web {
+    background-color: #ffebac;
+    width: 720px;
+    height: 850px;
+    margin-top: 15px;
+    }
+    .web {
+    width: 720px;
+    height: 500px;
+    }
+    /* gives the web heading font size and margin */
+    .web-heading {
+    font-size: 32px;
+    font-weight: bold;
+    margin-left: 15px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    }
+    /* gives the web-bar a wrapper position background color size and margin*/
+    .wrapper-webbar {
+    position: relative;
+    background-color: #000000;
+    width: 240px;
+    height: 95px;
+    margin-left: 15px;
+    margin-top: 30px;
+    }
+     /* gives the web plan color, font size , position and margin */
+    .web-bar {
+    color: white;
+    font-size: 24px;
+    position: relative;
+    float: left;
+    margin-left: 35px;
+    margin-top: 30px;
+    }
+     /* gives the icon color, font size , position and margin */
+    .web-icons {
+    position: absolute;
+    margin-left: 180px;
+    margin-top: 25px;
+    color: white;
+    font-size: xx-large;   
+    }
+      /* gives the print section, pic a  wrapper background color size and margin */
+     .wrapper-print {
+    background-color: #ffebac;
+    width: 720px;
+    height: 850px;
+    margin-top: 15px;
+    }
+    .print {
+    width: 720px;
+    height: 500px;
+    }
+    /* gives the print heading font size and margin */
+    .print-heading {
+    font-size: 32px;
+    font-weight: bold;
+    margin-left: 15px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    }
+      /* gives the print-bar a wrapper position background color size and margin*/
+    .wrapper-printbar {
+    position: relative;
+    background-color: #000000;
+    width: 240px;
+    height: 95px;
+    margin-left: 20px;
+    margin-top: 30px;
+    }
+     /* gives the print plan color, font size , position and margin */
+    .print-bar {
+    color: white;
+    font-size: 24px;
+    position: relative;
+    float: left;
+    margin-left: 30px;
+    margin-top: 30px;
+    }
+     /* gives the icon color, font size , position and margin */
+    .print-icons {
+    position: absolute;
+    margin-left: 180px;
+    margin-top: 25px;
+    color: white;
+    font-size: xx-large;   
+    }
+      /* gives the vision section a  background pic, size and margin */
+    .vision-area {
+    position: relative;
+    background-image: url("vision.jpg");
+    margin-top: 30px; 
+    margin-left: -10px;
+    }
+
+    .vision {
+    width: 750px;
+    height: 400px;
+    }
+     /* gives the vision heading and p font size and margin */
+    .vision-heading {
+    position: relative;
+    font-size: 42px;
+    font-weight: bold;
+    color: white;
+    width: 690px;
+    margin-top: -350px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    }
+    .vision-p {
+    position: relative; 
+    color: white;
+    margin-bottom: 20px;
+    }
+      /* gives the vision-bar a wrapper position background outline color size and margin*/
+    .wrapper-visionbar {
+    position: relative;
+    background-color: rgb(27, 27, 63);
+    outline:1px solid #c78c06;
+    width: 250px;
+    height: 120px;
+    margin-left: 10px;
+    margin-top: 20px;
+    }
+    /* gives the vision plan color, font size , position and margin */
+    .vision-bar {
+    position: relative;
+    float: left;
+    margin-left: 40px;
+    margin-top: 35px;
+    font-size: 28px;
+    color: white;
+    }
+     /* gives the icon color, font size , position and margin */
+    .vision-icons {
+    position: absolute;
+    margin-left: 200px;
+    margin-top: 35px;
+    color: white;
+    font-size: xx-large;  
+    }
+    /* gives the our team heading font size and margin */
+    .ourteam-heading {
+    font-size: 50px;
+    font-weight: bold;
+    margin-left: 15px;
+    margin-top: 100px;
+    }
+    /* gives John section, pic a  wrapper background color size and margin */
+    .wrapper-john {
+    background-color: #ffebac;
+    width: 720px;
+    height: 850px;
+    margin-bottom: 15px;
+    }
+    .john {
+    position: relative;
+    width: 720px;
+    height: 500px; 
+    }
+    /* gives John headings font size , weight and margin */
+   .john-heading1 {
+    font-size:  38px;
+    font-weight: bold;
+    margin-left: 15px;
+    margin-top: 20px;
+   }
+    .john-heading2 {
+    font-size:  18px;
+    font-weight: bold;
+    margin-left: 15px; 
+   }
+   /* gives the headings a horizontal line to separate them */
+    .john-hr {
+    height: 2px;
+    background-color: #c78c06;
+    border: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    }
+    .bob-hr    { 
+    height: 2px;
+    background-color: #c78c06;
+    border: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    }
+     /* gives Bob section, pic a  wrapper background color size and margin */
+    .warpper-bob {
+    background-color: #ffebac;
+    width: 720px;
+    height: 850px;
+    margin-top: 15px;
+    }
+    .bob {
+    position: relative;
+    width: 720px;
+    height: 500px;
+    margin-top: 30px;
+    }
+    /* gives Bob headings font size , weight and margin */
+    .bob-heading1 {
+     font-size:  38px;
+     font-weight: bold;
+     margin-left: 15px;
+    }
+    .bob-heading2 {
+     font-size:  18.75px;
+     font-weight: bold;
+     margin-left: 15px;
+    }
+    /* gives the contact us section's headings font size and margin */
+    .contactus-heading {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-left: 15px;
+    margin-top: 80px;
+   }
+   .contact-heading1 {
+    font-size:  38px;
+    font-weight: bold;
+    }
+    /* gives the input section size*/
+    #fullname, #email{
+    width: 730px;
+    height: 30px;
+    }
+   #message {
+    width: 730px;
+    height: 140px;
+    }
+    /* gives the button backgroud border style size marign color font size */
+    button {
+    background-color: #000000;
+    border: none;
+    width: 80px;
+    height: 45px;
+    margin-top: 30px;
+    color: #c78c06;
+    text-align: center;
+    font-size: 28px;
+    display: inline-block;
+    }
+     /* gives the hours section's headings, td, th font size weight  border style  padding background color  */
+    .table-heading {
+    font-size: 32px;
+    display: inline;
+    font-weight: bold;
+    }
+    table {
+      width: 730px;
+      height: 150px;
+      border-top: 1px solid;
+      border-left: 1px solid;
+      border-spacing: 0;
+      margin-bottom: 20px;
+    }
+    table td ,th {
+    padding: 10px 30px;
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+    }
+    th {
+    background-color: #ffebac;
+   }
+   /* gives the loction heading font size and margin */
+    .loaction-heading {
+    font-size: 32px;
+    font-weight: bold;
+   }
+   /* gives the map size */
+    iframe {
+    width: 730px;
+    height: 450px;
+    border:  0;
+   }
+     /* gives the footer a wrapper background color size */
+   .wrapper-footer {
+    width: 730px;
+    height: 100px;
+    background-color: #000000;
+    }
+    /* gives the footer headings font size color and marigin */
+   .footer-heading1 {
+    font-size: 16px;
+    color: #c78c06;
+    margin-left: 10px;
+    margin-top: 20px;
+    }
+    .footer-heading2 {
+    font-size: 16px;
+    color: #c78c06;
+    margin-top: 20px;
+    margin-left: 10px;
+   }
+    /* gives the link a line color*/
+   a {
+    color:#c78c06;
+   }
+}   
+/* desktops style*/
+@media screen and (min-width:800px)and (max-width:1200px) {
+    /* gives the body ,p and wrapper-header values*/
+    body {
+        width: 1200px;
+        font-family: "Amatic+SC",sans-serif;
+        background-color: white;
+        padding: 20px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    p {
+        font-size: 10px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .wrapper-header {
+        background-color: #ffebac;
+        width: 100%;
+        height: 990px;
+        margin-bottom: 30px;
+    }
+    .wrapper-logonavsearch {
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 10px;
+    }
+    /* gives the header-navbar section background and size */
+    .navbar {
+    background-color:#000000;
+    width: 100%;
+    height: 150px;
+    margin: 0;
+    }
+    /* deletes the navbar section-logobox background color,size and margins */
+    .logobox {
+   background-color: transparent;
+    }
+    /* gives the logo image size and margin */
+    .logo { 
+    width: 90px;
+    height: 90px;
+    margin-left: 90px;
+    margin-top: -15px;
+    }
+    /* gives nav position flex and margin */
+    .navbox {
+        position: relative;
+        display: flex;
+        margin-left: -550px;
+        margin-right: 120px;
+        margin-bottom: 100px;      
+    }
+     /* gives "home" background color size position */
+    .navbox-home {
+        position: absolute;
+        background-color: #c78c06;
+        width: 110px;
+        height: 45px;
+        font-size: 16px;
+     }
+      /* gives "about us , serivices, team, contact " font size position margin */
+    .navbox-aboutus {
+        position: absolute;
+        font-size: 16px;
+        width: 110px;
+        height: 45px;
+        margin-left: 130px;
+    }
+    .navbox-services {
+        position: absolute;
+        font-size: 16px;
+        width: 110px;
+        height: 45px;
+        margin-left: 260px;   
+    }
+    .navbox-team {
+        position: absolute;
+        font-size: 16px;
+        width: 110px;
+        height: 45px;
+        margin-left: 390px;
+    }   
+    .navbox-contact {
+        position: absolute;
+        font-size: 16px;
+        width: 110px;
+        height: 45px;
+        margin-left: 520px;  
+    }
+    /* gives the navbar section-searchbox display and margins */
+    .searchbox {
+    display:  flex;
+    width: 300px;
+    height: 50px; 
+    margin-bottom: 100px;
+    }
+     /* gives the input area size and margin*/
+    .search-area input[type=text]{
+    margin-left: 15px;
+    width: 200px;
+    height: 30px;
+    }
+     /* gives the searchbar-submit border, color, transprent the background-color, margin and position */
+    .searchbar-submit {
+    align-items: center;
+    justify-content: center;
+    color:#c78c06;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: 1px solid #c78c06;
+    margin-left: 0.5px;
+    margin-top: -0.6px;  
+    }
+    /* gives the image the position and size */
+    .main-banner {
+    position: relative;
+    width: 100%;
+    height: 500px; 
+    }
+    /* gives a background to the welcome header and p , which needs to be 
+    transparent , size and position  */
+    .wrapper-welcome {
+    position: relative;
+    background-color: #222;
+    opacity: 0.5;
+    width: 1050px;
+    margin-top: -480px;
+    margin-left: 50px;
+    margin-right: 50px;
+    height: 450px;
+    }
+    /* gives the welcome heading and p  font size and margin */
+    .welcome-heading {
+    position: relative;
+    font-size: 56px;
+    font-weight: bold;
+    color: white;
+    width: 700px;
+    margin-top: -350px;
+    margin-left: 90px;
+    }
+    .welcome-p {
+    position: relative; 
+    width: 90%;
+    color: white;
+    margin-left: 75px;
+    }
+    /* gives the connect-bar a wrapper position background color size and margin*/
+    .wrapper-connectbar {
+    position: relative;
+    background-color: #c78c06;
+    width: 260px;
+    height: 90px;
+    margin-left: 90px;
+    margin-top: 15px;
+   }
+    /* gives the connect color, font size , position and margin */
+   .connect-bar {
+    position: relative;
+    float: left;
+    margin-left: 30px;
+    margin-top: 30px;
+    text-align: center;     
+    font-size: 18px;
+    }
+     /* gives the icon color, font size , position and margin */
+    .connect-icons {
+    position: relative;
+    float: left;
+    margin-left: 10px;
+    margin-top: 25px;
+    text-align: center; 
+    font-size: xx-large;
+    }
+     /* gives the about-us section 's pic position, size and margin*/
+    .about-us {
+    position: relative;
+    float: left;
+    width: 500px;
+    height: 300px;
+    margin-left: 55px;
+    margin-top: 5px;
+   }
+     /* gives introduce us heading font size , weight and margin*/
+    .introduce-heading {
+    font-size:  36px;
+    font-weight: bold;
+    margin-left: 15px;
+    margin-top: 100px;
+   }
+  /* gives the our-services heading font size ,weight and margin*/
+   .ourservices-heading {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-left: 120px;
+   }
+   /* gives the wrapper to play the fives boxes */
+   .ourservices-wrapper {
+    display: flex;
+    flex-wrap: wrap;  
+   }
+     /* gives the digital section wrapper ,pic background color size */
+    .wrapper-digitial {
+    background-color: #ffebac;
+    width: 450px;
+    height: 600px;
+    margin-left: 120px;
+   }
+   .digital {
+    width: 450px;
+    height: 350px;
+    }
+      /* gives the ourservices heading font size ,weight and margin*/
+    .digital-heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 15px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    }
+      /* gives the digital-bar wrapper background color ,size and margin */
+    .wrapper-digitalbar {
+    position: relative;
+    background-color: #000000;
+    width: 430px;
+    height: 60px;
+    margin-top: 5px;
+    margin-left: 10px;
+    }
+    /* gives the digital plan color ,font size, position ,float to left */
+    .digital-bar {
+    color: white;
+    font-size: 18px;
+    position: relative;
+    float: left;
+    margin-left: 120px;
+    margin-top: 20px;
+   }
+      /* gives the icon color, font size , position and margin */
+    .digital-icons {
+    position: relative;
+    float: left;
+    margin-left: 25px;
+    margin-top: 15px;
+    color: white;
+    font-size: x-large;
+   }
+     /* gives the marketing section, pic a  wrapper background color size and margin */
+    .wrapper-marketing {
+    background-color: #ffebac;
+    width: 450px;
+    height: 600px;
+    margin-left: 10px;
+    margin-top: -1px;
+   }
+    .marketing {
+    width: 450px;
+    height: 350px;
+    }
+     /* gives the marketing heading font size and margin */
+    .marketing-heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 15px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+   }
+   /* gives the marketing-bar a wrapper position background color size and margin*/
+    .wrapper-marketingbar {
+    position: relative;
+    background-color: #000000;
+    width: 430px;
+    height: 60px;
+    margin-left: 10px;
+    margin-top: 5px;
+   }
+     /* gives the marketing plan color, font size , position and margin */
+    .marketing-bar {
+    color: white;
+    font-size: 18px;
+    position: relative;
+    float: left;
+    margin-left: 150px;
+    margin-top: 20px;
+    }
+     /* gives the icon color, font size , position and margin */
+    .marketing-icons {
+    position: absolute;
+    margin-left: 310px;
+    margin-top: 15px;
+    color: white;
+    font-size: x-large;   
+    }
+    /* gives the video section, pic a  wrapper background color size and margin */
+    .wrapper-video {
+    background-color: #ffebac;
+    width:296px;
+    height: 450px;
+    margin-left: 120px;
+   }
+    .video {
+    width: 296px;
+    height: 200px;
+   }
+    /* gives the video heading font size and margin */
+    .video-heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 15px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+   }
+    /* gives the video-bar a wrapper position background color size and margin*/
+    .wrapper-videobar {
+    position: relative;
+    background-color: #000000;
+    width: 280px;
+    height: 55px;
+    margin-left: 10px;
+    margin-top: 3px;
+   }
+   /* gives the video plan color, font size , position and margin */
+   .video-bar {
+    color: white;
+    font-size: 18px;
+    position: relative;
+    float: left;
+    margin-left: 70px;
+    margin-top: 20px;
+   }
+    /* gives the icon color, font size , position and margin */
+   .video-icons {
+    position: absolute;
+    margin-left: 180px;
+    margin-top: 15px;
+    color: white;
+    font-size: x-large;   
+    }
+    /* gives the web section, pic a  wrapper background color size and margin */
+    .wrapper-web {
+    background-color: #ffebac;
+    width: 296px;
+    height: 450px;
+    margin-left: 10px;
+    }
+    .web {
+    width: 296px;
+    height: 200px;
+    }
+      /* gives the web heading font size and margin */
+    .web-heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 15px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    }
+     /* gives the web-bar a wrapper position background color size and margin*/
+   .wrapper-webbar {
+    position: relative;
+    background-color: #000000;
+    width: 280px;
+    height: 55px;
+    margin-left: 10px;
+    margin-top: 3px;
+    }
+     /* gives the web plan color, font size , position and margin */
+   .web-bar {
+    color: white;
+    font-size: 18px;
+    position: relative;
+    float: left;
+    margin-left: 70px;
+    margin-top: 20px;
+    }
+    /* gives the icon color, font size , position and margin */
+    .web-icons {
+    position: absolute;
+    margin-left: 180px;
+    margin-top: 15px;
+    text-align: center; 
+    color: white;
+    font-size: x-large;   
+    }
+     /* gives the print section, pic a  wrapper background color size and margin */ 
+    .wrapper-print {
+    background-color: #ffebac;
+    width: 296px;
+    height: 450px;
+    margin-left: 10px;
+    }
+    .print {
+    width: 296px;
+    height: 200px;
+    }
+     /* gives the print heading font size and margin */
+    .print-heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 15px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    }
+     /* gives the print-bar a wrapper position background color size and margin*/
+    .wrapper-printbar {
+    position: relative;
+    background-color: #000000;
+    width: 280px;
+    height: 55px;
+    margin-left: 10px;
+    margin-top: 3px;
+    }
+     /* gives the print plan color, font size , position and margin */
+    .print-bar {
+    color: white;
+    font-size: 18px;
+    position: relative;
+    float: left;
+    margin-left: 70px;
+    margin-top: 20px;
+    text-align: center; 
+    }
+    /* gives the icon color, font size , position and margin */
+    .print-icons {
+    position: absolute;
+    margin-left: 180px;
+    margin-top: 15px;
+    text-align: center; 
+    color: white;
+    font-size: x-large;   
+    }
+   /* gives the vision section a  background pic, size and margin */
+    .vision-area {
+    position: relative;
+    background-image: url("vision.jpg");
+    margin-top: 30px; 
+    margin-left: -10px;
+    }
+    .vision {
+    width: 1150px;
+    height: 250px;
+    }
+    /* gives the vision heading and p font size and margin */
+    .vision-heading {
+    position: relative;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    width: 700px;
+    margin-top: -240px;
+    margin-left: 50px;
+    margin-bottom: 15px;
+    }
+    .vision-p {
+    position: relative; 
+    color: white;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    }
+       /* gives the vision-bar a wrapper position background outline color size and margin*/
+    .wrapper-visionbar {
+    position: relative;
+    background-color: rgb(27, 27, 63);
+    outline:1px solid #c78c06;
+    width: 200px;
+    height: 90px;
+    margin-left: 50px;
+    margin-top: 5px;
+    }
+    /* gives the vision plan color, font size , position and margin */
+    .vision-bar {
+    position: relative;
+    float: left;
+    margin-left: 40px;
+    margin-top: 30px;  
+    font-size: 18px;
+    color: white;
+    }
+    /* gives the icon color, font size , position and margin */
+    .vision-icons {
+    position: absolute;
+    margin-left: 150px;
+    margin-top: 25px;
+    color: white;
+    font-size: x-large;  
+    }
+    /* gives the our team heading font size and margin */
+    .ourteam-heading {
+    font-size: 36px;
+    font-weight: bold;
+    margin-left: 50px;
+    margin-top: 80px;
+    }
+     /* gives John section, pic a  wrapper background color size and margin */
+   .wrapper-john {
+    position: relative;
+    background-color: #ffebac;
+    width: 1040px;
+    height: 350px;
+    margin-left:50px;
+    }
+    .john {
+    position: relative;
+    width: 520px;
+    height: 350px;
+    }
+     /* gives John headings and p font size , weight and margin */
+    .john-heading1 {
+    float: right;
+    font-size:  24px;
+    font-weight: bold;
+    margin-right: 395px;
+   }
+   .john-heading2 {
+    float:right;
+    font-size:  16px;
+    font-weight: bold;
+    margin-right: 350px;
+    margin-top: -300px;
+    }
+    .john-p {
+    position: relative;
+    float: right;
+    margin-left: 520px;
+    margin-top: -250px;
+    }
+    /* gives the headings a horizontal line to separate them */
+    .john-hr{
+    position: relative;
+    height: 2px;
+    background-color: #c78c06;
+    border: none;
+    margin-top: -270px;
+    width: 47%;
+    margin-left: 540px;
+    }
+     /* gives Bob section, pic a  wrapper background color size and margin */
+    .wrapper-bob {
+    background-color: #ffebac;
+     width: 1040px;
+     height: 350px;
+     margin-left: 50px;
+     margin-top: -15px;
+    }
+    .bob {
+     position: relative;
+     width: 520px;
+     height: 350px;
+     margin-left: 405.5px;
+     margin-top: -6.5px;
+    }
+     /* gives Bob headings and p font size , weight and margin */
+    .bob-heading1 {
+     float: left;
+     font-size:  24px;
+     font-weight: bold;
+     margin-left: 15px;
+    }
+     .bob-heading2 {
+    float: left;
+     font-size:  16px;
+     font-weight: bold;
+     margin-left: 15px;
+     margin-top: -310px;
+ 
+    }
+    .bob-p {
+     position: relative;
+     float: left;
+     margin-right: 520px;
+     margin-top: -260px;
+    }
+     /* gives the headings a horizontal line to separate them */
+    .bob-hr{
+        position: relative;
+        height: 2px;
+        background-color: #c78c06;
+        border: none;
+        margin-top: -280px;
+        width: 47%;
+        margin-right: 600px;
+    }
+     /* gives the contact us section's headings font size and margin */
+    .contactus-heading {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-left: 40px;
+    margin-top: 80px;
+   }
+   .contact-heading1 {
+    font-size:  24px;
+    font-weight: bold;
+    margin-left: 40px;
+    }
+    /* gives the label of input a margin */
+    label { 
+    margin-left: 40px;
+    }
+     /* gives the input section size*/
+    #fullname, #email{
+    width: 520px;
+    height: 30px;
+    margin-left: 40px;
+    }
+    #message {
+    width: 520px;
+    height: 140px;
+    margin-left: 40px;
+    }
+     /* gives the button backgroud border style size marign color font size */
+    button {
+    background-color: #000000;
+    border: none;
+    width: 40px;
+    height: 30px;
+    margin-top: 15px;
+    margin-left: 40px;
+    margin-bottom: 30px;
+    color: #c78c06;
+    text-align: center;
+    font-size: 16px;
+    display: inline-block;
+    }
+      /* gives the hours section's headings, td, th font size weight  border style  padding background color  */
+    .table-heading {
+    font-size: 24px;
+    display: inline;
+    font-weight: bold;
+    margin-left: 40px;
+    margin-top: 30px;
+    }
+    table {
+    width: 1050px;
+    height: 120px;
+    border-top: 1px solid;
+    border-left: 1px solid;
+    border-spacing: 0;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    }
+    table td ,th {
+    padding: 10px 30px;
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+    }
+    th {
+    background-color: #ffebac;
+    }
+      /* gives the loction heading font size and margin */
+    .loaction-heading {
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: -570px;
+     margin-right: 500px;
+     }
+     /* gives the map size and float */
+    iframe{
+    position: absolute;
+    float: right;
+    margin-top: -530px;
+    margin-left: 565px;
+    width: 525px;
+    height: 320px;
+    }
+/* gives the footer a wrapper background color size */
+   .wrapper-footer {
+    width: 1150px;
+    height: 55px;
+    background-color: #000000;
+    }
+     /* gives the footer headings font size color and marigin */
+    .footer-heading1 {
+    font-size: 10px;
+    color: #c78c06;
+    margin-left: 50px;
+    }
+    .footer-heading2 {
+    font-size: 10px;
+    color: #c78c06;   
+    margin-left: 50px;
+   }
+    /* gives the link a line color*/
+   a {
+    color:#c78c06;
+   }  
+}
+   
+    
+
+
+
